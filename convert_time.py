@@ -1,11 +1,11 @@
 def convert_to_24_hour(hour, minute, period):
     # dict
-    adjustments = {"am": 0, "pm": 12}
+    period_adjustments = {"am": 0, "pm": 12}
 
     if hour == 12:
         hour = 0
 
-    hour += adjustments.get(period.lower(), 0)
+    hour += period_adjustments.get(period.lower(), 0)
 
     return f"{hour:02d}{minute:02d}"
 
