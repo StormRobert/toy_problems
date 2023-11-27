@@ -1,4 +1,4 @@
-def are_exactly_two_positive_numbers(a, b, c):
+def only_two_positive_numbers(a, b, c):
     positive_count = 0
 
     if a > 0:
@@ -14,7 +14,7 @@ def are_exactly_two_positive_numbers(a, b, c):
     print(f"Numbers: {a}, {b}, {c} | Condition: {result}")
     return result
 
-print(are_exactly_two_positive_numbers(-4, 6, 8)) 
-print(are_exactly_two_positive_numbers(4, -6, 9))  
-print(are_exactly_two_positive_numbers(-4, 6, 0))  
-print(are_exactly_two_positive_numbers(4, 6, 10)) 
+print(only_two_positive_numbers(-4, 6, 8)) 
+print(only_two_positive_numbers(4, -6, 9))  
+print(only_two_positive_numbers(-4, 6, 0))  
+print(only_two_positive_numbers(4, 6, 10)) 
